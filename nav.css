@@ -1,0 +1,22 @@
+:root {
+    --main-nav-color: rgb(19, 25, 33);
+    --nav-secondary-color:rgb(35, 47, 62);
+   
+  }
+  
+
+
+
+  .nav-belt{
+    width: 100%;
+    height: 60px;
+    background-color: var(--main-nav-color);
+  }
+
+  .nav-detail{
+    width: 100%;
+    height: 40px;
+    background-color: var(--nav-secondary-color);
+    
+  }
+

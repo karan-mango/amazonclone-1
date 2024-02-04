@@ -1,0 +1,24 @@
+/* this is th emain css */
+:root {
+    --to-remove:rgb(255, 229, 229);
+  }
+  
+main-content{
+
+
+
+    .banner{
+        width: 100%;
+        height: 230px;
+        background-color: var(--to-remove);
+        
+    }
+
+
+
+
+
+
+
+
+}
