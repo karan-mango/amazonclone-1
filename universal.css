@@ -10,5 +10,9 @@
 
 body{
     font-family: sans-serif;
-    
+    background-color:var(--background-color) ;
+    color: white;
+text-transform: capitalize;
+z-index: -1;
+overflow-x: hidden;
 }

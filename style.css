@@ -1,17 +1,397 @@
 /* this is th emain css */
 :root {
     --to-remove:rgb(255, 229, 229);
+    --background-color:rgb(227, 230, 230);
   }
   
 main-content{
 
-
+position: relative;
 
     .banner{
+        position: absolute;
+       /* z-index: 2; */
         width: 100%;
-        height: 230px;
+        height: 600px;
         background-color: var(--to-remove);
+        z-index: 0;
+            -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0));
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0));
+        border: 2px solid red;
+        box-shadow: 0 10px 10px 5px red;
+
+
+        /* slide buttons */
+
+        .next-slide-left, .next-slide-right{
+            position: absolute;
+            background-color: rgba(255,255,255,.3);
+            width: 80px;
+            height: 250px;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img{
+                width: 50px;
+                
+            }
+            
+
+        }
+        .next-slide-left:hover, .next-slide-right:hover{
+        border: 2px solid white;
+        }
+        .next-slide-right{
+            position: absolute;
+            right: -2px;
+
+        }
+
+
+
+
+        .banner-slider{
+            overflow: hidden;
+display: flex;
+width: 100vw;
+height:600px ;
+
+        }
+
+     
+
+        .banner-slide{
+            width: 100vw;
+            height:600px ;
+            position: relative;
+            transition: transform 5s ease;
+        }
         
+        
+        img{
+            width: 100vw;
+            height: 100%;
+            background-size: cover;
+        }
+        
+    }
+
+    .products-main{
+        /* z-index: -2; */
+        /* position: relative; */
+        padding: 20px 20px 0 20px;
+        width: 100%;
+       
+        /* background-color:var(--background-color) ; */
+      
+        .layout{
+            z-index: 3;
+            position: relative;
+            margin-top: 280px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 20px;
+           
+
+
+
+            .card{
+                background-color: rgb(255, 255, 255);
+                width: 340px;
+                height: 420px;
+                padding: 20px 0 15px 0;
+                .card-heading{
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                    padding: 0 20px;
+                    color: black;
+                    font-weight: 700;
+                }
+                .card-layout-1{
+                    width: 100%;
+                    padding: 0 20px;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    .inner-card{
+                        width: 140px;
+                       
+                        height: 150px;
+                        /* background-color: rgb(181, 181, 236); */
+                        margin: 5px;
+                        position: relative;
+                        overflow: hidden;
+                        /* background-color: #c56464; */
+                        .img{
+                            
+                            width: 186px;
+                            height: 115px;
+                            background-size: cover;
+                            position: absolute;
+                            left: -25px;
+                           
+                            
+                        }
+                        .img1{
+                            background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Headset_1x._SY116_CB667159060_.jpg');
+
+                        }
+                        .img2{
+                            background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg');
+
+                        }
+                        .img3{
+                            background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Mouse_1x._SY116_CB667159063_.jpg');
+                        }
+                        .img4{
+                            background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Chair_1x._SY116_CB667159060_.jpg');
+                        }
+                        span{
+                            font-size: 14px;
+                           /* background-color: #fff; */
+                           top: 120px;
+                           position: relative;
+                            color: black;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            
+                            
+                        }
+                    }
+
+                }
+                .image{
+                    img{
+                        padding: 0  20px;
+                        width: 100%;
+                        height: 300px;
+                    }
+                    
+                    height: 300px;
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+                .image-prob{
+                    height: 230px;
+                    width: 100%;
+                    margin-bottom: 20px;
+                    display: flex;
+                    /* align-items: center; */
+                    justify-content: center;
+                    img{
+                        /* padding: 0 20px; */
+                        width: 40%;
+
+                        height: 224px;
+                        
+                    }
+                }
+                .offer{
+                    padding: 0 20px;
+                    color: black;
+                    font-size: 13px;
+                    height: 80px;
+
+                    
+                    .percentage{
+                        color:#cc0c39;
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 7px;
+                 
+                  /* justify-content: center; */
+                  
+                        font-size: 12px;
+                        display: flex;
+                        font-weight: 600;
+                        span{
+                            background-color: #cc0c39;
+                            padding: 4px 6px;
+                            color: white;
+                            margin-right: 10px;
+                            font-weight: 500;
+                        }
+                       
+
+                    }
+                }
+                a{
+                    font-size: 13px;
+                    color: rgb(85, 127, 158);
+                    font-weight: 500;
+                    padding: 0 20px;
+                   
+
+                }
+
+                .card-layout-2{
+                    width: 100%;
+                    padding: 0 20px;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    .inner-card{
+                        width: 140px;
+                       
+                        height: 150px;
+                        /* background-color: rgb(181, 181, 236); */
+                        margin: 5px;
+                        position: relative;
+                        overflow: hidden;
+                        /* background-color: #c56464; */
+                        .img{
+                            
+                            width: 186px;
+                            height: 115px;
+                            background-size: cover;
+                            position: absolute;
+                            left: -25px;
+                           
+                            
+                        }
+                        .img1{
+                            background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_LP-HP_B08MYX5Q2W_01.23._SY116_CB619238939_.jpg');
+
+                        }
+                        .img2{
+                            background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_home_B08RCCP3HV_01.23._SY116_CB619238939_.jpg');
+
+                        }
+                        .img3{
+                            background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_kitchen_B0126LMDFK_01.23._SY116_CB619238939_.jpg');
+                        }
+                        .img4{
+                            background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_health-beauty_B07662GN57_01.23._SY116_CB619238939_.jpg');
+                        }
+                        span{
+                            font-size: 14px;
+                           /* background-color: #fff; */
+                           top: 120px;
+                           position: relative;
+                            color: black;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            
+                            
+                        }
+                    }
+
+                }
+
+                .card-layout-3{
+                    width: 100%;
+                    padding: 0 20px;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    .inner-card{
+                        width: 140px;
+                       
+                        height: 150px;
+                        /* background-color: rgb(181, 181, 236); */
+                        margin: 5px;
+                        position: relative;
+                        overflow: hidden;
+                        /* background-color: #c56464; */
+                        .img{
+                            
+                            width: 186px;
+                            height: 115px;
+                            background-size: cover;
+                            position: absolute;
+                            left: -25px;
+                           
+                            
+                        }
+                        .img1{
+                            background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_BOTTOMS_1x._SY116_CB624172947_.jpg');
+
+                        }
+                        .img2{
+                            background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_TOPS_1x._SY116_CB623353881_.jpg');
+
+                        }
+                        .img3{
+                            background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_DRESSES_1x._SY116_CB623353881_.jpg');
+                        }
+                        .img4{
+                            background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_SHOES_1x._SY116_CB624172947_.jpg');
+                        }
+                        span{
+                            font-size: 14px;
+                           /* background-color: #fff; */
+                           top: 120px;
+                           position: relative;
+                            color: black;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            
+                            
+                        }
+                    }
+
+                }
+
+
+            }
+        }
+
+    }
+
+
+    .products-content{
+        width: 100%;
+        padding: 20px;
+        padding-top: 0;
+        background-color: var(--background-color);
+
+        /* rgb(227, 230, 230) */
+
+        .horizontal-card{
+            height: 367px;
+            padding-top: 20px;
+            padding-bottom: 15px;
+            background-color: #ffffff;
+            width: 100%;
+            margin-bottom: 20px;
+           
+        }
+        .horizontal-banner{
+            height: 281px;
+            width: 100%;
+            background-color: #ffffff;
+            margin-bottom: 20px;
+
+        }
+    }
+
+    .layout{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+        margin-bottom: 20px;
+
+
+
+        .card{
+            background-color: rgb(255, 255, 255);
+            width: 340px;
+            height: 420px;
+            padding: 20px 0 15px 0;
+
+            .card-heading{
+                font-size: 21px;
+                margin-bottom: 10px;
+                padding: 0 20px;
+                color: black;
+                font-weight: 700;
+            }
+
+
+
+        }
     }
 
 
