@@ -1,0 +1,83 @@
+.container-banner{
+  width: 100vw;
+  height: 600px;
+  background-color: rgb(2, 192, 255);
+  color: white;
+  position: absolute;
+  
+  background-color: var(--to-remove);
+  z-index: 3;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 0)
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 0)
+  );
+  
+ 
+  button{
+    outline: none;
+    border: none;
+
+  }
+  .next,.prev{
+    position: absolute;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 80px;
+  height: 250px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  img {
+    width: 50px;
+  }
+}
+  
+
+.next:hover,.prev:hover{
+    border: 2px solid white;
+
+}
+.next{
+    position: absolute;
+    right: -2px;
+}
+
+
+  .carosoul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+
+
+
+    .slider{
+        width: 500%;
+        display: flex;
+        transition: all .5s;
+        position: relative;
+
+
+     img{
+            width: 100vw;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid red;
+            color: white;
+      }
+    }
+  }
+  
+}

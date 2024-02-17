@@ -7,9 +7,11 @@
 main-content {
   position: relative;
 
+   
+/* 
   .banner {
     position: absolute;
-    /* z-index: 2; */
+    
     width: 100%;
     height: 600px;
     background-color: var(--to-remove);
@@ -27,7 +29,7 @@ main-content {
     border: 2px solid red;
     box-shadow: 0 10px 10px 5px red;
 
-    /* slide buttons */
+   
 
     .next-slide-left,
     .next-slide-right {
@@ -52,11 +54,17 @@ main-content {
       position: absolute;
       right: -2px;
     }
-
+.carousal{
+   width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
     .banner-slider {
       overflow: hidden;
       display: flex;
-      width: 100vw;
+      width: 500%;
+;
       height: 600px;
     }
 
@@ -73,6 +81,25 @@ main-content {
       background-size: cover;
     }
   }
+  } */
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   .products-main {
     /* z-index: -2; */
@@ -311,11 +338,10 @@ main-content {
 
     .horizontal-card {
       height: 367px;
-      padding-top: 20px;
-      padding-bottom: 15px;
+      padding: 10px 20px;
       background-color: #ffffff;
       width: 100%;
-      margin-bottom: 20px;
+      margin-bottom: 20px;  
     }
     .horizontal-banner {
       height: 281px;

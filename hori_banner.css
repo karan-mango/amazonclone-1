@@ -1,0 +1,273 @@
+.products-content{
+
+    .horizontal-banner{
+        padding: 10px 20px;
+        position: relative;
+        .hori-bann-title{
+            font-size: 20px;
+            font-weight: 700;
+            color: black;
+            margin-top: 10px;
+            line-height: 31px;
+            
+        }
+        button{
+            outline: none;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: 50%;
+            transform: translate(0%,-50%);
+        
+          }
+   
+
+
+.hori-next-1,
+.hori-next-2,
+.hori-next-3, /* New class for next button 3 */
+.hori-next-4, /* New class for next button 4 */
+.hori-next-5 { /* New class for next button 5 */
+    position: absolute;
+    background-color: rgb(253, 253, 253);
+    width: 50px;
+    height: 100px;
+    z-index: 2;
+}
+
+.hori-prev-1,
+.hori-prev-2,
+.hori-prev-3, /* New class for previous button 3 */
+.hori-prev-4, /* New class for previous button 4 */
+.hori-prev-5 { /* New class for previous button 5 */
+    position: absolute;
+    background-color: rgb(253, 253, 253);
+    width: 50px;
+    height: 100px;
+    z-index: 2;
+}
+        
+        
+        
+          img {
+            width: 35px;
+          }
+        }
+          
+        
+      
+        .hori-next-1,
+        .hori-next-2,
+        .hori-next-3, /* New class for next button 3 */
+        .hori-next-4, /* New class for next button 4 */
+        .hori-next-5 { /* New class for next button 5 */
+            position: absolute;
+            right: -2px;
+        }
+        
+        .img-cont_1,
+        .img-cont_2,
+        .img-cont_3, /* New class for image container 3 */
+        .img-cont_4, /* New class for image container 4 */
+        .img-cont_5 { /* New class for image container 5 */
+            display: flex;
+            position: relative;
+        }
+        
+        
+
+
+
+
+
+
+        .hori-bann-book-img:hover{
+            overflow-x: scroll;
+            /* scrollbar-width: thin; */
+            
+            transition: all 5s ease;
+        }
+        .hori-bann-book-img{
+            display: flex;
+            overflow-x: hidden;
+            margin-bottom: 14px;
+            transition: all 5s; 
+            
+            
+            a{
+                padding: 0 11px;
+                img{
+                    width: auto;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+.horizontal-card {
+    height: 367px;
+    padding: 10px 20px;
+    overflow: hidden;
+   
+    width: 100%;
+    margin-bottom: 20px; 
+   
+    position: relative;
+    
+    .hori-card-title{
+        
+        font-size: 22px;
+            font-weight: 600;
+            color: black;
+            margin-top: 10px;
+            line-height: 31px;
+
+    }
+
+
+    
+/* New class for next button 3 */
+.hori-next-4, /* New class for next button 4 */
+.hori-next-5 { /* New class for next button 5 */
+    position: absolute;
+    background-color: rgb(253, 253, 253);
+    width: 50px;
+    height: 100px;
+    z-index: 2;
+}
+
+ /* New class for previous button 3 */
+.hori-prev-4, /* New class for previous button 4 */
+.hori-prev-5 { /* New class for previous button 5 */
+    position: absolute;
+    background-color: rgb(253, 253, 253);
+    width: 50px;
+    height: 100px;
+    z-index: 2;
+}
+        
+        
+        
+          img {
+            width: 35px;
+          }
+        
+          
+        
+      
+       /* New class for next button 3 */
+        .hori-next-4, /* New class for next button 4 */
+        .hori-next-5 { /* New class for next button 5 */
+            position: absolute;
+            right: -2px;
+        }
+        
+         /* New class for image container 3 */
+        .img-card-4, /* New class for image container 4 */
+        .img-card-5 { /* New class for image container 5 */
+            display: flex;
+            position: relative;
+        }
+        
+        
+
+        button{
+            outline: none;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: 50%;
+            transform: translate(0%,-50%);
+        
+          }
+
+
+          .img-card-4{
+
+            .card{
+                margin-bottom: 10px;
+                .image1{
+                    width: 240px;
+                    height: 200px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 10px;
+                    padding: 5px 0;
+                    background-color: rgba(15, 17, 17, 0.03)
+                    ;
+                    img{
+                        height: auto;
+                        width: auto;
+                       
+                        
+                    }
+                  
+                }
+                .offer {
+                    margin-top: 10px;
+                    margin-bottom: 8px;
+                 
+                    color: black;
+                    font-size: 13px;
+                  
+          
+                    .percentage {
+                      color: #cc0c39;
+                      display: flex;
+                      align-items: center;
+                      margin-bottom: 7px;
+          
+                      /* justify-content: center; */
+          
+                      font-size: 12px;
+                      display: flex;
+                      font-weight: 600;
+                      span {
+                        background-color: #cc0c39;
+                        padding: 4px 6px;
+                        color: white;
+                        margin-right: 10px;
+                        font-weight: 500;
+                      }
+                    }
+                    .offer-price{
+                        font-size: 18px;
+                        sup{
+                            font-size: 11px;
+                        }
+                        span{
+                            font-size: 12px;
+                            color: #565959;
+                            del {
+                                text-decoration: line-through;
+                                color: rgb(89, 89, 89);
+                              }
+                        }
+                    }
+                   
+                  }
+                 
+          }
+          .title{
+            font-size: 13px;
+            color: black;
+          
+        }
+    }
+
+
+
+  }

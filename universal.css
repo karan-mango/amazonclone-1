@@ -5,6 +5,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+   
     
 }
 
@@ -14,5 +15,5 @@ body{
     color: white;
 text-transform: capitalize;
 z-index: -1;
-overflow-x: hidden;
+/* overflow-x:visible; */
 }
